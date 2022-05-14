@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+class MoreOptionScreen extends StatelessWidget {
+  const MoreOptionScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,72 +11,34 @@ class ProfileScreen extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       child: ListView(
         children: [
-          Row(
-            children: [
-              Container(
-                width: 100,
-                height: 100,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                      image: NetworkImage(
-                          'https://googleflutter.com/sample_image.jpg'),
-                      fit: BoxFit.fill),
-                ),
-              ),
-              SizedBox(
-                width: 20,
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "Jane Doe",
+           Text(
+                    "More",
                     style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
                         color: Color(0xFF525C6F)),
                   ),
-                  Text(
-                    "janedoe123@gmail.com",
-                    style: TextStyle(fontSize: 15, color: Color(0xFF515C6F)),
-                  ),
-                  OutlinedButton(
-                    onPressed: () {},
-                    child: Text(
-                      'EDIT PROFILE',
-                      style: TextStyle(
-                          fontSize: 12,
-                          color: Color(0xFF727C8E),
-                          fontWeight: FontWeight.bold),
-                    ),
-                    style: OutlinedButton.styleFrom(
-                      shape: StadiumBorder(),
-                    ),
-                  )
-                ],
-              )
-            ],
-          ),
           SizedBox(
             height: 40.0,
           ),
           Container(
             width: 335,
-            height: 192,
+            height: 198,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: Colors.white),
             child: Column(
               children: [
+                SizedBox(height: 10,),
                 Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+                      
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Image.asset('assets/icons/all_order.png',
                           width: 20, height: 17.61),
-                      Text('All My Orders'),
+                      Text('Shipping Address'),
                       Container(
                         height: 18,
                         width: 18,
@@ -109,7 +71,7 @@ class ProfileScreen extends StatelessWidget {
                     children: [
                       Image.asset('assets/icons/pending_shipments.png',
                           width: 20, height: 17.61),
-                      Text('Pending Shipments'),
+                      Text('Payment Method'),
                       Container(
                         height: 18,
                         width: 18,
@@ -142,21 +104,28 @@ class ProfileScreen extends StatelessWidget {
                     children: [
                       Image.asset('assets/icons/pending_payment.png',
                           width: 20, height: 17.61),
-                      Text(' Pending Payment'),
-                      Container(
-                        height: 18,
-                        width: 18,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Color(0xFFBFC3C9),
-                        ),
-                        child: Center(
-                          child: Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 6,
-                            color: Color(0xFF727C8E),
+                      Text('Currency'),
+                      Row(
+                        children: [
+                      Text('USD'),
+                      SizedBox(width: 10,),
+
+                          Container(
+                            height: 18,
+                            width: 18,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xFFBFC3C9),
+                            ),
+                            child: Center(
+                              child: Icon(
+                                Icons.arrow_forward_ios_rounded,
+                                size: 6,
+                                color: Color(0xFF727C8E),
+                              ),
+                            ),
                           ),
-                        ),
+                        ],
                       ),
                     ],
                   ),
@@ -175,21 +144,27 @@ class ProfileScreen extends StatelessWidget {
                     children: [
                       Image.asset('assets/icons/finished.png',
                           width: 20, height: 17.61),
-                      Text('Finished Orders'),
-                      Container(
-                        height: 18,
-                        width: 18,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Color(0xFFBFC3C9),
-                        ),
-                        child: Center(
-                          child: Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 6,
-                            color: Color(0xFF727C8E),
+                      Text('Language'),
+                      Row(
+                        children: [
+                          Text('English'),
+                          SizedBox(width: 10,),
+                          Container(
+                            height: 18,
+                            width: 18,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xFFBFC3C9),
+                            ),
+                            child: Center(
+                              child: Icon(
+                                Icons.arrow_forward_ios_rounded,
+                                size: 6,
+                                color: Color(0xFF727C8E),
+                              ),
+                            ),
                           ),
-                        ),
+                        ],
                       ),
                     ],
                   ),
@@ -215,7 +190,7 @@ class ProfileScreen extends StatelessWidget {
                     children: [
                       Image.asset('assets/icons/invite.png',
                           width: 20, height: 17.61),
-                      Text('Invite Friends'),
+                      Text('Notification Settings'),
                       Container(
                         height: 18,
                         width: 18,
@@ -248,7 +223,7 @@ class ProfileScreen extends StatelessWidget {
                     children: [
                       Image.asset('assets/icons/support.png',
                           width: 20, height: 17.61),
-                      Text('Customer Support'),
+                      Text('Privacy Policy'),
                       Container(
                         height: 18,
                         width: 18,
@@ -281,7 +256,7 @@ class ProfileScreen extends StatelessWidget {
                     children: [
                       Image.asset('assets/icons/rate.png',
                           width: 20, height: 17.61),
-                      Text('Rate Our App'),
+                      Text('Frequently Asked Questions'),
                       Container(
                         height: 18,
                         width: 18,
@@ -314,7 +289,7 @@ class ProfileScreen extends StatelessWidget {
                     children: [
                       Image.asset('assets/icons/suggest.png',
                           width: 20, height: 17.61),
-                      Text('Make a Suggestion'),
+                      Text('Legal Information'),
                       Container(
                         height: 18,
                         width: 18,
@@ -335,7 +310,9 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+SizedBox(height: 20,),
+      Center(child: Text('LOG OUT',style: TextStyle(color: Colors.red),))
         ],
       ),
     );
