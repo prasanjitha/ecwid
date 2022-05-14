@@ -11,13 +11,13 @@ class MoreOptionScreen extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       child: ListView(
         children: [
-           Text(
-                    "More",
-                    style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF525C6F)),
-                  ),
+          Text(
+            "More",
+            style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Color(0xFF525C6F)),
+          ),
           SizedBox(
             height: 40.0,
           ),
@@ -28,11 +28,12 @@ class MoreOptionScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10), color: Colors.white),
             child: Column(
               children: [
-                SizedBox(height: 10,),
+                SizedBox(
+                  height: 10,
+                ),
                 Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
-                      
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -107,9 +108,10 @@ class MoreOptionScreen extends StatelessWidget {
                       Text('Currency'),
                       Row(
                         children: [
-                      Text('USD'),
-                      SizedBox(width: 10,),
-
+                          Text('USD'),
+                          SizedBox(
+                            width: 10,
+                          ),
                           Container(
                             height: 18,
                             width: 18,
@@ -148,7 +150,9 @@ class MoreOptionScreen extends StatelessWidget {
                       Row(
                         children: [
                           Text('English'),
-                          SizedBox(width: 10,),
+                          SizedBox(
+                            width: 10,
+                          ),
                           Container(
                             height: 18,
                             width: 18,
@@ -311,8 +315,14 @@ class MoreOptionScreen extends StatelessWidget {
               ],
             ),
           ),
-SizedBox(height: 20,),
-      Center(child: Text('LOG OUT',style: TextStyle(color: Colors.red),))
+          SizedBox(
+            height: 20,
+          ),
+          Center(
+              child: Text(
+            'LOG OUT',
+            style: TextStyle(color: Colors.red),
+          ))
         ],
       ),
     );
