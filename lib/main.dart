@@ -2,6 +2,7 @@ import 'package:ecwid/screens/authenticate_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/all_categories.dart';
+import 'screens/checkout_screen.dart';
 import 'screens/home_screen.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const CheckoutScreen(),
     );
   }
 }
