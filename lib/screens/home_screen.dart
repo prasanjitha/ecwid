@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'authenticate_screen.dart';
 import 'home_category_screen.dart';
+import 'more_option_screen.dart';
 import 'profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -35,7 +36,8 @@ const _items = [
   HomeDecorationScreen(),
   LogIn(),
   LogIn(),
-  ProfileScreen()
+  ProfileScreen(),
+  MoreOptionScreen(),
     ];
     return Scaffold(
         appBar: AppBar(
