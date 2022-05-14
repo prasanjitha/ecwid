@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'authenticate_screen.dart';
+import 'cart_screen.dart';
 import 'home_category_screen.dart';
 import 'more_option_screen.dart';
 import 'profile_screen.dart';
@@ -35,7 +36,7 @@ const _items = [
     const _pages= [
   HomeDecorationScreen(),
   LogIn(),
-  LogIn(),
+  CartScreen(),
   ProfileScreen(),
   MoreOptionScreen(),
     ];
