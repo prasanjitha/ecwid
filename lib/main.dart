@@ -1,6 +1,7 @@
 import 'package:ecwid/screens/authenticate_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'screens/all_categories.dart';
 import 'screens/home_screen.dart';
 
 void main() {

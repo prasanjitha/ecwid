@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import 'all_categories.dart';
+
 class HomeDecorationScreen extends StatelessWidget {
   const HomeDecorationScreen({Key? key}) : super(key: key);
 
@@ -111,24 +113,29 @@ class HomeDecorationScreen extends StatelessWidget {
             ),
             Column(
               children: [
-                Container(
-                  height: 65,
-                  width: 65,
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color(0xFF9FAAA1),
-                        offset: Offset(0.0, 1.0), //(x,y)
-                        blurRadius: 6.0,
+                GestureDetector(
+                  onTap: (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => AllCategoryScreen()));
+                  },
+                  child: Container(
+                    height: 65,
+                    width: 65,
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0xFF9FAAA1),
+                          offset: Offset(0.0, 1.0), //(x,y)
+                          blurRadius: 6.0,
+                        ),
+                      ],
+                      shape: BoxShape.circle,
+                      color: Colors.white,
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.arrow_forward_ios_rounded,
+                        color: Colors.red,
                       ),
-                    ],
-                    shape: BoxShape.circle,
-                    color: Colors.white,
-                  ),
-                  child: Center(
-                    child: Icon(
-                      Icons.arrow_forward_ios_rounded,
-                      color: Colors.red,
                     ),
                   ),
                 ),
@@ -153,164 +160,166 @@ class HomeDecorationScreen extends StatelessWidget {
                 color: Color(0xFF515C6F)),
           ),
         ),
-        SizedBox(
-          width: double.infinity,
-          height: 184,
-          child: ListView(scrollDirection: Axis.horizontal, children: [
-            Stack(
-              children: [
-                ClipRRect(
-                    borderRadius: BorderRadius.circular(10.0),
-                    child: Image.asset(
-                      'assets/homepage/Base.png',
-                      width: 365.0,
-                      height: 184.0,
-                      fit: BoxFit.cover,
-                    )),
-                Positioned(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'For all your',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
+        SafeArea(
+          child: SizedBox(
+            width: double.infinity,
+            height: 184,
+            child: ListView(scrollDirection: Axis.horizontal, children: [
+              Stack(
+                children: [
+                  ClipRRect(
+                      borderRadius: BorderRadius.circular(10.0),
+                      child: Image.asset(
+                        'assets/homepage/Base.png',
+                        width: 365.0,
+                        height: 184.0,
+                        fit: BoxFit.cover,
+                      )),
+                  Positioned(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'For all your',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                          ),
                         ),
-                      ),
-                      Text(
-                        'summer clothing',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
+                        Text(
+                          'summer clothing',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                      Text(
-                        'needs',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
+                        Text(
+                          'needs',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
+                    top: 35,
+                    left: 50,
                   ),
-                  top: 35,
-                  left: 50,
-                ),
         
-                Positioned(
-                  child: Container(
-                    width: 121,
-                    height: 30,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius:
-                            BorderRadius.all(Radius.circular(50))),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(''),
-                          Text(
-                            'SEE MORE',
-                            style: TextStyle(
-                                color: Colors.black,
-                                letterSpacing: 0.5,
-                                fontWeight: FontWeight.bold),
-                          ),
+                  Positioned(
+                    child: Container(
+                      width: 121,
+                      height: 30,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(50))),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(''),
+                            Text(
+                              'SEE MORE',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  letterSpacing: 0.5,
+                                  fontWeight: FontWeight.bold),
+                            ),
 
-                          Icon(
-                            Icons.arrow_drop_down_circle,
-                            color: Color(0xFFFF6969),
-                            size: 19,
-                          )
-                        ],
+                            Icon(
+                              Icons.arrow_drop_down_circle,
+                              color: Color(0xFFFF6969),
+                              size: 19,
+                            )
+                          ],
+                        ),
                       ),
                     ),
+                    top: 115,
+                    left: 50,
                   ),
-                  top: 115,
-                  left: 50,
-                ),
-              ],
-            ),
-         
-            Stack(
-              children: [
-                ClipRRect(
-                    borderRadius: BorderRadius.circular(10.0),
-                    child: Image.asset(
-                      'assets/homepage/base02.png',
-                      width: 365.0,
-                      height: 184.0,
-                      fit: BoxFit.cover,
-                    )),
-                Positioned(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'For all your',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                        ),
-                      ),
-                      Text(
-                        'summer clothing',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Text(
-                        'needs',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
-                  ),
-                  top: 35,
-                  left: 50,
-                ),
-                Positioned(
-                  child: Container(
-                    width: 121,
-                    height: 30,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius:
-                            BorderRadius.all(Radius.circular(50))),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(''),
-                          Text(
-                            'SEE MORE',
-                            style: TextStyle(
-                                color: Colors.black,
-                                letterSpacing: 0.5,
-                                fontWeight: FontWeight.bold),
+                ],
+              ),
+           
+              Stack(
+                children: [
+                  ClipRRect(
+                      borderRadius: BorderRadius.circular(10.0),
+                      child: Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 365.0,
+                        height: 184.0,
+                        fit: BoxFit.cover,
+                      )),
+                  Positioned(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'For all your',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
                           ),
-                          Icon(
-                            Icons.arrow_drop_down_circle,
-                            color: Color(0xFFFF6969),
-                            size: 19,
-                          )
-                        ],
+                        ),
+                        Text(
+                          'summer clothing',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          'needs',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                    top: 35,
+                    left: 50,
+                  ),
+                  Positioned(
+                    child: Container(
+                      width: 121,
+                      height: 30,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(50))),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(''),
+                            Text(
+                              'SEE MORE',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  letterSpacing: 0.5,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            Icon(
+                              Icons.arrow_drop_down_circle,
+                              color: Color(0xFFFF6969),
+                              size: 19,
+                            )
+                          ],
+                        ),
                       ),
                     ),
+                    top: 115,
+                    left: 50,
                   ),
-                  top: 115,
-                  left: 50,
-                ),
-              ],
-            ),
-          ]),
+                ],
+              ),
+            ]),
+          ),
         ),
         SizedBox(
           height: 20,
