@@ -73,22 +73,8 @@ class ShopProfile extends StatelessWidget {
                                         color: Colors.grey, width: 0.5))),
                             child: TabBarView(children: <Widget>[
                               HomePageScreen(),
-                              Container(
-                                child: Center(
-                                  child: Text('Display Tab 3',
-                                      style: TextStyle(
-                                          fontSize: 22,
-                                          fontWeight: FontWeight.bold)),
-                                ),
-                              ),
-                              Container(
-                                child: Center(
-                                  child: Text('Display Tab 4',
-                                      style: TextStyle(
-                                          fontSize: 22,
-                                          fontWeight: FontWeight.bold)),
-                                ),
-                              ),
+                              HomeScreen(),
+                              ReviewScreen(),
                             ]))
                       ])),
             ]),
@@ -379,6 +365,616 @@ class HomePageScreen extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0xFFF5F6F8),
+      body: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: ListView(
+          children: [
+            Text('Trending',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Color(0xFF515C6F),
+                    fontWeight: FontWeight.bold)),
+            SizedBox(
+              height: 20.0,
+            ),
+            Container(
+              height: 184,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Stack(
+                    children: [
+                      Container(
+                        width: 325,
+                        height: 184,
+                        decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(20.0)),
+                        child: Image.asset(
+                          'assets/homepage/base02.png',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Positioned(
+                        top: 15,
+                        left: 10,
+                        child: Align(
+                          // alignment: Alignment.topRight,
+                          child: Text(
+                            'Look soft like \na Pastel this \nWinter',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 29),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                          top: 125,
+                          left: 10,
+                          child: Container(
+                            width: 143,
+                            height: 39.49,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(24),
+                                color: Colors.white),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Text('COLLECTION'),
+                                Container(
+                                  width: 28,
+                                  height: 28.49,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(40),
+                                      color: Colors.red),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.arrow_forward_ios_rounded,
+                                      color: Colors.white,
+                                      size: 14,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          )),
+                    ],
+                  ),
+                  SizedBox(
+                    width: 20.0,
+                  ),
+                  Stack(
+                    children: [
+                      Container(
+                        width: 325,
+                        height: 184,
+                        decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(20.0)),
+                        child: Image.asset(
+                          'assets/homepage/base02.png',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      Positioned(
+                        top: 15,
+                        left: 10,
+                        child: Align(
+                          // alignment: Alignment.topRight,
+                          child: Text(
+                            'Look soft like \na Pastel this \nWinter',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 29),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                          top: 125,
+                          left: 10,
+                          child: Container(
+                            width: 143,
+                            height: 39.49,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(24),
+                                color: Colors.white),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Text('COLLECTION'),
+                                Container(
+                                  width: 28,
+                                  height: 28.49,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(40),
+                                      color: Colors.red),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.arrow_forward_ios_rounded,
+                                      color: Colors.white,
+                                      size: 14,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          )),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Container(
+                height: 200,
+                child: GridView.count(
+                  mainAxisSpacing: 4.0,
+                  crossAxisSpacing: 4.0,
+                  crossAxisCount: 3,
+                  children: <Widget>[
+                    Container(
+                      width: 101,
+                      height: 135,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            'assets/homepage/base02.png',
+                            width: 35,
+                            height: 76,
+                          ),
+                          Text('Floral Dress'),
+                          Text('\$49.99')
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 101,
+                      height: 135,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            'assets/homepage/base02.png',
+                            width: 35,
+                            height: 76,
+                          ),
+                          Text('Floral Dress'),
+                          Text('\$49.99')
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 101,
+                      height: 135,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            'assets/homepage/base02.png',
+                            width: 35,
+                            height: 76,
+                          ),
+                          Text('Floral Dress'),
+                          Text('\$49.99')
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 101,
+                      height: 135,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            'assets/homepage/base02.png',
+                            width: 35,
+                            height: 76,
+                          ),
+                          Text('Floral Dress'),
+                          Text('\$49.99')
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 101,
+                      height: 135,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            'assets/homepage/base02.png',
+                            width: 35,
+                            height: 76,
+                          ),
+                          Text('Floral Dress'),
+                          Text('\$49.99')
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 101,
+                      height: 135,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            'assets/homepage/base02.png',
+                            width: 35,
+                            height: 76,
+                          ),
+                          Text('Floral Dress'),
+                          Text('\$49.99')
+                        ],
+                      ),
+                    ),
+                  ],
+                ))
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class ReviewScreen extends StatelessWidget {
+  const ReviewScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ListView(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Container(
+                width: 60.0,
+                height: 60.0,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(40.0),
+                    color: Color(0xFFB7E6E6)),
+                child: Center(
+                  child: Text(
+                    'JD',
+                    style: TextStyle(
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF85CBCB)),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        StarBar(),
+                        SizedBox(
+                          width: 20.0,
+                        ),
+                        Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
+                      ],
+                    ),
+                    Text('Janr Doe'),
+                    Text('Lorem ipsum dolor sit amet,'),
+                    Text('consectetur adipiscing elit, sed'),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Container(
+                width: 60.0,
+                height: 60.0,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(40.0),
+                    color: Color(0xFFB7E6E6)),
+                child: Center(
+                  child: Text(
+                    'JD',
+                    style: TextStyle(
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF85CBCB)),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        StarBar(),
+                        SizedBox(
+                          width: 20.0,
+                        ),
+                        Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
+                      ],
+                    ),
+                    Text('Janr Doe'),
+                    Text('Lorem ipsum dolor sit amet,'),
+                    Text('consectetur adipiscing elit, sed'),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Container(
+                width: 60.0,
+                height: 60.0,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(40.0),
+                    color: Color(0xFFB7E6E6)),
+                child: Center(
+                  child: Text(
+                    'JD',
+                    style: TextStyle(
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF85CBCB)),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        StarBar(),
+                        SizedBox(
+                          width: 20.0,
+                        ),
+                        Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
+                      ],
+                    ),
+                    Text('Janr Doe'),
+                    Text('Lorem ipsum dolor sit amet,'),
+                    Text('consectetur adipiscing elit, sed'),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Container(
+                width: 60.0,
+                height: 60.0,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(40.0),
+                    color: Color(0xFFB7E6E6)),
+                child: Center(
+                  child: Text(
+                    'JD',
+                    style: TextStyle(
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFF85CBCB)),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        StarBar(),
+                        SizedBox(
+                          width: 20.0,
+                        ),
+                        Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
+                      ],
+                    ),
+                    Text('Janr Doe'),
+                    Text('Lorem ipsum dolor sit amet,'),
+                    Text('consectetur adipiscing elit, sed'),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                        Image.asset(
+                          'assets/homepage/base02.png',
+                          width: 44,
+                          height: 44,
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class StarBar extends StatelessWidget {
+  const StarBar({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Icon(
+          Icons.star,
+          color: Colors.red,
+        ),
+        Icon(
+          Icons.star,
+          color: Colors.red,
+        ),
+        Icon(
+          Icons.star,
+          color: Colors.red,
+        ),
+        Icon(Icons.star),
+        Icon(Icons.star),
+      ],
     );
   }
 }
