@@ -99,88 +99,75 @@ class ProductScreen extends StatelessWidget {
                         child: TabBarView(children: <Widget>[
                           //  HomePageScreen(),
                           ProductTab(),
-                          Container(
-                            child: Center(
-                              child: Text('Display Tab 3',
-                                  style: TextStyle(
-                                      fontSize: 22,
-                                      fontWeight: FontWeight.bold)),
-                            ),
-                          ),
-                          Container(
-                            child: Center(
-                              child: Text('Display Tab 4',
-                                  style: TextStyle(
-                                      fontSize: 22,
-                                      fontWeight: FontWeight.bold)),
-                            ),
-                          ),
+                          ProductDetails(),
+                          ReviewTab()
                         ]))
                   ])),
-                  Divider(),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        width:165,
-                        height: 46,
-                        decoration: BoxDecoration(
-                          borderRadius:BorderRadius.circular(23),
-                          color: Colors.white
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text('SHARE THIS'),
-                            Container(
-                        height: 28,
-                        width: 28,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Color(0xFFBFC3C9),
-                        ),
-                        child: Center(
-                          child: Icon(
-                            Icons.arrow_upward_outlined,
-                            size: 12,
-                            color:Colors.white,
+              Divider(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 165,
+                    height: 46,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(23),
+                        color: Colors.white),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text('SHARE THIS'),
+                        Container(
+                          height: 28,
+                          width: 28,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Color(0xFFBFC3C9),
+                          ),
+                          child: Center(
+                            child: Icon(
+                              Icons.arrow_upward_outlined,
+                              size: 12,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
-                      ),
-                          ],
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: 165,
+                    height: 46,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(23),
+                        color: Color(0xFFFF6969)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          'SHARE THIS',
+                          style: TextStyle(color: Colors.white),
                         ),
-                      ),
-                      Container(
-                        width:165,
-                        height: 46,
-                        decoration: BoxDecoration(
-                          borderRadius:BorderRadius.circular(23),
-                          color: Color(0xFFFF6969)
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text('SHARE THIS',style: TextStyle(color: Colors.white),),
-                            Container(
-                        height: 28,
-                        width: 28,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Colors.white,
-                        ),
-                        child: Center(
-                          child: Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 12,
-                            color:Color(0xFFFF6969),
+                        Container(
+                          height: 28,
+                          width: 28,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.white,
+                          ),
+                          child: Center(
+                            child: Icon(
+                              Icons.arrow_forward_ios_rounded,
+                              size: 12,
+                              color: Color(0xFFFF6969),
+                            ),
                           ),
                         ),
-                      ),
-                          ],
-                        ),
-                      )
-                    ],
+                      ],
+                    ),
                   )
+                ],
+              )
             ],
           ),
         ),
@@ -197,10 +184,13 @@ class ProductTab extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(height: 20.0,),
-
+        SizedBox(
+          height: 20.0,
+        ),
         Text('SELECT COLOR'),
-        SizedBox(height: 20.0,),
+        SizedBox(
+          height: 20.0,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -208,59 +198,57 @@ class ProductTab extends StatelessWidget {
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Colors.pink
-              ),
+                  borderRadius: BorderRadius.circular(20), color: Colors.pink),
               child: Center(
-                child: 
-                Icon(Icons.rice_bowl_outlined,color: Colors.white,)
-              ),
+                  child: Icon(
+                Icons.rice_bowl_outlined,
+                color: Colors.white,
+              )),
             ),
-                        Container(
+            Container(
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Color(0xFFFF8c69)
-              ),
+                  borderRadius: BorderRadius.circular(20),
+                  color: Color(0xFFFF8c69)),
             ),
-                                    Container(
+            Container(
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Color(0xFF67b5f7)
-              ),
+                  borderRadius: BorderRadius.circular(20),
+                  color: Color(0xFF67b5f7)),
             ),
-                                    Container(
+            Container(
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Color(0xFFFfffff)
-              ),
-            ),                        Container(
-              width: 38.82,
-              height: 38.82,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Color(0xFFc9c9c9)
-              ),
+                  borderRadius: BorderRadius.circular(20),
+                  color: Color(0xFFFfffff)),
             ),
-                                    Container(
+            Container(
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Color(0xFF3E3A3A)
-              ),
+                  borderRadius: BorderRadius.circular(20),
+                  color: Color(0xFFc9c9c9)),
+            ),
+            Container(
+              width: 38.82,
+              height: 38.82,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Color(0xFF3E3A3A)),
             )
-
           ],
         ),
-        SizedBox(height: 20.0,),
+        SizedBox(
+          height: 20.0,
+        ),
         Text('SELECT SIZE (US)'),
-        SizedBox(height: 20.0,),
+        SizedBox(
+          height: 20.0,
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -283,7 +271,10 @@ class ProductTab extends StatelessWidget {
                 color: Colors.white,
               ),
               child: Center(
-                child: Text('5',style: TextStyle(color: Colors.red),),
+                child: Text(
+                  '5',
+                  style: TextStyle(color: Colors.red),
+                ),
               ),
             ),
             Container(
@@ -310,6 +301,497 @@ class ProductTab extends StatelessWidget {
             )
           ],
         )
+      ],
+    );
+  }
+}
+
+class ProductDetails extends StatelessWidget {
+  const ProductDetails({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Opacity(opacity: 0.5, child: Text('BRAND')),
+            Opacity(opacity: 0.5, child: Text('SKU')),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Lily\'s Ankle Boots',
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              '0590458902809',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Opacity(opacity: 0.5, child: Text('BRAND')),
+            Opacity(opacity: 0.5, child: Text('SKU')),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Lily\'s Ankle Boots',
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              '0590458902809',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Opacity(opacity: 0.5, child: Text('BRAND')),
+            Opacity(opacity: 0.5, child: Text('SKU')),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Lily\'s Ankle Boots',
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              '0590458902809',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Opacity(opacity: 0.5, child: Text('BRAND')),
+            Opacity(opacity: 0.5, child: Text('SKU')),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Lily\'s Ankle Boots',
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              '0590458902809',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Opacity(opacity: 0.5, child: Text('BRAND')),
+            Opacity(opacity: 0.5, child: Text('SKU')),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Lily\'s Ankle Boots',
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              '0590458902809',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Opacity(opacity: 0.5, child: Text('BRAND')),
+            Opacity(opacity: 0.5, child: Text('SKU')),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Lily\'s Ankle Boots',
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              '0590458902809',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Opacity(opacity: 0.5, child: Text('BRAND')),
+            Opacity(opacity: 0.5, child: Text('SKU')),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Lily\'s Ankle Boots',
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              '0590458902809',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Opacity(opacity: 0.5, child: Text('BRAND')),
+            Opacity(opacity: 0.5, child: Text('SKU')),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Lily\'s Ankle Boots',
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              '0590458902809',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Opacity(opacity: 0.5, child: Text('BRAND')),
+            Opacity(opacity: 0.5, child: Text('SKU')),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Lily\'s Ankle Boots',
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              '0590458902809',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Opacity(opacity: 0.5, child: Text('BRAND')),
+            Opacity(opacity: 0.5, child: Text('SKU')),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Lily\'s Ankle Boots',
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              '0590458902809',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class ReviewTab extends StatelessWidget {
+  const ReviewTab({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: [
+        Row(
+          children: [
+            Container(
+              width: 60.0,
+              height: 60.0,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(40.0),
+                  color: Color(0xFFB7E6E6)),
+              child: Center(
+                child: Text(
+                  'JD',
+                  style: TextStyle(
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF85CBCB)),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      StarBar(),
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
+                    ],
+                  ),
+                  Text('Janr Doe'),
+                  Text('Lorem ipsum dolor sit amet,'),
+                  Text('consectetur adipiscing elit, sed'),
+                  Row(
+                    children: [
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+        Row(
+          children: [
+            Container(
+              width: 60.0,
+              height: 60.0,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(40.0),
+                  color: Color(0xFFB7E6E6)),
+              child: Center(
+                child: Text(
+                  'JD',
+                  style: TextStyle(
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF85CBCB)),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      StarBar(),
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
+                    ],
+                  ),
+                  Text('Janr Doe'),
+                  Text('Lorem ipsum dolor sit amet,'),
+                  Text('consectetur adipiscing elit, sed'),
+                  Row(
+                    children: [
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+        Row(
+          children: [
+            Container(
+              width: 60.0,
+              height: 60.0,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(40.0),
+                  color: Color(0xFFB7E6E6)),
+              child: Center(
+                child: Text(
+                  'JD',
+                  style: TextStyle(
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF85CBCB)),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      StarBar(),
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
+                    ],
+                  ),
+                  Text('Janr Doe'),
+                  Text('Lorem ipsum dolor sit amet,'),
+                  Text('consectetur adipiscing elit, sed'),
+                  Row(
+                    children: [
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                      Image.asset(
+                        'assets/homepage/base02.png',
+                        width: 44,
+                        height: 44,
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
+          ],
+        )
+      ],
+    );
+  }
+}
+
+class StarBar extends StatelessWidget {
+  const StarBar({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Icon(
+          Icons.star,
+          color: Colors.red,
+        ),
+        Icon(
+          Icons.star,
+          color: Colors.red,
+        ),
+        Icon(
+          Icons.star,
+          color: Colors.red,
+        ),
+        Icon(Icons.star),
+        Icon(Icons.star),
       ],
     );
   }
