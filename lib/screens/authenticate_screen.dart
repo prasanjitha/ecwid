@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import 'home_screen.dart';
+
 class AuthenticateScreen extends StatefulWidget {
   const AuthenticateScreen({Key? key}) : super(key: key);
 
@@ -98,36 +100,42 @@ class LogIn extends StatelessWidget {
                 )),
           ),
           SizedBox(height: 30.0,),
-          Container(
-            width: 330,
-            height: 46,
-            decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Color(0xFFFF6969),
-                    offset: Offset(0.0, 1.0), //(x,y)
-                    blurRadius: 6.0,
-                  ),
-                ],
-                color: Color(0xFFFF6969),
-                borderRadius: BorderRadius.all(Radius.circular(50))),
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(''),
-                  Text(
-                    'LOG IN',
-                    style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
-                  ),
-                  Icon(
-                    Icons.next_plan_rounded,
-                    color: Colors.white,
-                    size: 29,
-                  )
-                ],
+          GestureDetector(
+              onTap: (){
+                       Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
+             
+                    },
+            child: Container(
+              width: 330,
+              height: 46,
+              decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color(0xFFFF6969),
+                      offset: Offset(0.0, 1.0), //(x,y)
+                      blurRadius: 6.0,
+                    ),
+                  ],
+                  color: Color(0xFFFF6969),
+                  borderRadius: BorderRadius.all(Radius.circular(50))),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(''),
+                    Text(
+                      'LOG IN',
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold),
+                    ),
+                    Icon(
+                      Icons.next_plan_rounded,
+                      color: Colors.white,
+                      size: 29,
+                    )
+                  ],
+                ),
               ),
             ),
           ),
