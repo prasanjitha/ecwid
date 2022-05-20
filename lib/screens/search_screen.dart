@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:ecwid/screens/view_search_result_screen.dart';
 import 'package:flutter/material.dart';
 
 class SearchScreen extends StatelessWidget {
@@ -45,7 +46,12 @@ class SearchScreen extends StatelessWidget {
                         topRight: const Radius.circular(25.0),
                       ),
                     ),
-                    child:Text('hello')
+                    child:Center(child: InkWell(
+                      onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => ViewSearchResult()));
+
+                      },
+                      child: Text('hello')))
                   );
                     return container;
                   },

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
+import 'package:ecwid/screens/cart_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
@@ -112,38 +113,44 @@ class OrderPlacedScreen extends StatelessWidget {
             Text('page under Profile tab',
                 style: TextStyle(fontSize: 15, color: Color(0xFF515C6F))),
             SizedBox(height: 40.0),
-            Container(
-              width: 165,
-              height: 46,
-              decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0xFFFF6969),
-                      offset: Offset(0.0, 1.0), //(x,y)
-                      blurRadius: 6.0,
-                    ),
-                  ],
-                  color: Color(0xFFFF6969),
-                  borderRadius: BorderRadius.all(Radius.circular(50))),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(''),
-                    Text(
-                      'MY ORDERS',
-                      style: TextStyle(
-                          color: Colors.white,
-                          letterSpacing: 0.5,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Icon(
-                      Icons.next_plan_rounded,
-                      color: Colors.white,
-                      size: 29,
-                    )
-                  ],
+            GestureDetector(
+              onTap: (){
+                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
+    
+              },
+              child: Container(
+                width: 165,
+                height: 46,
+                decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0xFFFF6969),
+                        offset: Offset(0.0, 1.0), //(x,y)
+                        blurRadius: 6.0,
+                      ),
+                    ],
+                    color: Color(0xFFFF6969),
+                    borderRadius: BorderRadius.all(Radius.circular(50))),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(''),
+                      Text(
+                        'MY ORDERS',
+                        style: TextStyle(
+                            color: Colors.white,
+                            letterSpacing: 0.5,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Icon(
+                        Icons.next_plan_rounded,
+                        color: Colors.white,
+                        size: 29,
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),

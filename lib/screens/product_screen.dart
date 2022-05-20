@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:ecwid/screens/home_category_screen.dart';
+import 'package:ecwid/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class ProductScreen extends StatelessWidget {
@@ -20,10 +22,16 @@ class ProductScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
-                  Icon(
-                    Icons.arrow_back_ios_rounded,
-                    color: Colors.red,
-                    size: 18,
+                  InkWell(
+                    onTap: (){
+                       Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
+
+                    },
+                    child: Icon(
+                      Icons.arrow_back_ios_rounded,
+                      color: Colors.red,
+                      size: 18,
+                    ),
                   ),
                   Column(
                     children: [

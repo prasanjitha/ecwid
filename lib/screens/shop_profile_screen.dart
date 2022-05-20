@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import 'home_screen.dart';
+
 class ShopProfile extends StatelessWidget {
   const ShopProfile({Key? key}) : super(key: key);
 
@@ -11,7 +13,12 @@ class ShopProfile extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.arrow_back_ios),
+          leading: InkWell(
+             onTap: (){
+                       Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
+
+                    },
+            child: Icon(Icons.arrow_back_ios)),
           actions: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -73,7 +80,7 @@ class ShopProfile extends StatelessWidget {
                                         color: Colors.grey, width: 0.5))),
                             child: TabBarView(children: <Widget>[
                               HomePageScreen(),
-                              HomeScreen(),
+                              ProfileHomeScreen(),
                               ReviewScreen(),
                             ]))
                       ])),
@@ -369,8 +376,8 @@ class HomePageScreen extends StatelessWidget {
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class ProfileHomeScreen extends StatelessWidget {
+  const ProfileHomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

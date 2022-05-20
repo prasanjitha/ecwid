@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:ecwid/screens/home_screen.dart';
+import 'package:ecwid/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 
 class ViewSearchResult extends StatelessWidget {
@@ -15,13 +17,19 @@ class ViewSearchResult extends StatelessWidget {
           children: [
             Row(
               children: [
-                Container(
-                    margin: EdgeInsets.only(top: 20.0),
-                    child: Icon(
-                      Icons.arrow_back_ios_rounded,
-                      color: Colors.red,
-                      size: 18,
-                    )),
+                GestureDetector(
+                  onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
+
+                  },
+                  child: Container(
+                      margin: EdgeInsets.only(top: 20.0),
+                      child: Icon(
+                        Icons.arrow_back_ios_rounded,
+                        color: Colors.red,
+                        size: 18,
+                      )),
+                ),
                 Expanded(
                   child: Container(
                     padding: EdgeInsets.only(top: 20, right: 10, left: 10),
