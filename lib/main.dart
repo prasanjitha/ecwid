@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 
 import 'screens/all_categories.dart';
 import 'screens/checkout_screen.dart';
+import 'screens/conversation_screen.dart';
 import 'screens/home_screen.dart';
+import 'screens/message_list_screen.dart';
 import 'screens/notification_screen.dart';
 import 'screens/order_placed_screen.dart';
 import 'screens/profile_screen.dart';
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: const ShopProfile(),
+      home: const NotificationScreen(),
 
     );
   }
