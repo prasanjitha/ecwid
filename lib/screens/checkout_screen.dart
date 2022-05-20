@@ -1,17 +1,19 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
+import 'package:ecwid/screens/cart_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
+import 'order_placed_screen.dart';
 
-class CheckoutScreen extends StatefulWidget {
-  const CheckoutScreen({Key? key}) : super(key: key);
+class MyCheckoutScreen extends StatefulWidget {
+  const MyCheckoutScreen({Key? key}) : super(key: key);
 
   @override
-  State<CheckoutScreen> createState() => _CheckoutScreenState();
+  State<MyCheckoutScreen> createState() => _MyCheckoutScreenState();
 }
 
-class _CheckoutScreenState extends State<CheckoutScreen> {
+class _MyCheckoutScreenState extends State<MyCheckoutScreen> {
       int _itemCount = 0;
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                   GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => HomeScreen()));
+                          builder: (context) =>HomeScreen()));
                     },
                     child: Icon(
                       Icons.close,
@@ -317,39 +319,45 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                     Text('Free Domestic Shipping',style: TextStyle(letterSpacing: 0.5, color: Color(0xFF515C6F),fontSize: 12),)
                   ],
                 ),
-                 Container(
-                          width: 165,
-                          height: 46,
-                          decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0xFFFF6969),
-                      offset: Offset(0.0, 1.0), //(x,y)
-                      blurRadius: 6.0,
-                    ),
-                  ],
-                  color: Color(0xFFFF6969),
-                  borderRadius: BorderRadius.all(Radius.circular(50))),
-                          child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(''),
-                    Text(
-                      'PLACE ORDER',
-                      style: TextStyle(
-                          color: Colors.white,letterSpacing: 0.5, fontWeight: FontWeight.bold),
-                    ),
-                    Icon(
-                      Icons.next_plan_rounded,
-                      color: Colors.white,
-                      size: 29,
-                    )
-                  ],
-                ),
+                 GestureDetector(
+                   onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => OrderPlacedScreen()));
+
+                   },
+                   child: Container(
+                            width: 165,
+                            height: 46,
+                            decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0xFFFF6969),
+                        offset: Offset(0.0, 1.0), //(x,y)
+                        blurRadius: 6.0,
+                      ),
+                    ],
+                    color: Color(0xFFFF6969),
+                    borderRadius: BorderRadius.all(Radius.circular(50))),
+                            child: Padding(
+                                 padding: const EdgeInsets.all(8.0),
+                                 child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(''),
+                      Text(
+                        'PLACE ORDER',
+                        style: TextStyle(
+                            color: Colors.white,letterSpacing: 0.5, fontWeight: FontWeight.bold),
+                      ),
+                      Icon(
+                        Icons.next_plan_rounded,
+                        color: Colors.white,
+                        size: 29,
+                      )
+                    ],
+                                 ),
+                            ),
                           ),
-                        ),
+                 ),
                            
                           ],
                           

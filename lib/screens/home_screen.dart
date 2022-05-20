@@ -6,7 +6,9 @@ import 'authenticate_screen.dart';
 import 'cart_screen.dart';
 import 'home_category_screen.dart';
 import 'more_option_screen.dart';
+import 'notification_screen.dart';
 import 'profile_screen.dart';
+import 'search_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -35,7 +37,7 @@ const _items = [
 ];
     const _pages= [
   HomeDecorationScreen(),
-  LogIn(),
+ SearchScreen(),
   CartScreen(),
   ProfileScreen(),
   MoreOptionScreen(),
@@ -47,11 +49,14 @@ const _items = [
           actions: <Widget>[
             new Padding(
               padding: const EdgeInsets.all(10.0),
-              child: new Container(
-                height: 150.0,
-                width: 30.0,
-                child: new GestureDetector(
-                  onTap: () {},
+              child: GestureDetector(
+                onTap: (){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => NotificationScreen()));
+  
+                },
+                child: new Container(
+                  height: 150.0,
+                  width: 30.0,
                   child: Stack(
                     children: <Widget>[
                       new IconButton(
@@ -70,7 +75,7 @@ const _items = [
                               right: 5.0,
                               child: new Center(
                                 child: new Text(
-                                  '3',
+                                  '4',
                                   style: new TextStyle(
                                       color: Colors.white,
                                       fontSize: 11.0,
