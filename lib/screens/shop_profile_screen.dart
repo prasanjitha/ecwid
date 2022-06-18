@@ -79,8 +79,9 @@ class ShopProfile extends StatelessWidget {
                                     top: BorderSide(
                                         color: Colors.grey, width: 0.5))),
                             child: TabBarView(children: <Widget>[
-                              HomePageScreen(),
                               ProfileHomeScreen(),
+                              HomePageScreen(),
+                             
                               ReviewScreen(),
                             ]))
                       ])),
@@ -129,33 +130,38 @@ class HomePageScreen extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset(
-                      'assets/homepage/backpack_PNG6363.png',
-                      width: 73,
-                      height: 73,
-                    ),
-                    SizedBox(
-                      height: 70.0,
-                    ),
-                    Text(
-                      'JJ\'s Backpack',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                    Text(
-                      '\$19.99',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Center(
+                        child: Image.asset(
+                          'assets/homepage/b01.png',
+                          width: 73,
+                          height: 73,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 2.0,
+                      ),
+                      Text(
+                        'JJ\'s Backpack',
+                        style: TextStyle(
+                            color: Color(0xFF515c6F),
+                            fontSize: 12,
+                            letterSpacing: 2),
+                      ),
+                      Text(
+                        '\$19.99',
+                        style: TextStyle(
+                            color: Color(0xFF515c6F),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                            letterSpacing: 2),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Container(
@@ -165,33 +171,38 @@ class HomePageScreen extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset(
-                      'assets/homepage/backpack_PNG6328.png',
-                      width: 73,
-                      height: 73,
-                    ),
-                    SizedBox(
-                      height: 70.0,
-                    ),
-                    Text(
-                      'JJ\'s Backpack',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                    Text(
-                      '\$19.99',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Center(
+                        child: Image.asset(
+                          'assets/homepage/b02.png',
+                          width: 73,
+                          height: 73,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 2.0,
+                      ),
+                      Text(
+                        'JJ\'s Backpack',
+                        style: TextStyle(
+                            color: Color(0xFF515c6F),
+                            fontSize: 12,
+                            letterSpacing: 2),
+                      ),
+                      Text(
+                        '\$19.99',
+                        style: TextStyle(
+                            color: Color(0xFF515c6F),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                            letterSpacing: 2),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Container(
@@ -201,33 +212,38 @@ class HomePageScreen extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset(
-                      'assets/homepage/backpack.png',
-                      width: 73,
-                      height: 73,
-                    ),
-                    SizedBox(
-                      height: 70.0,
-                    ),
-                    Text(
-                      'JJ\'s Backpack',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                    Text(
-                      '\$19.99',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Center(
+                        child: Image.asset(
+                          'assets/homepage/b03.png',
+                          width: 73,
+                          height: 73,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 2.0,
+                      ),
+                      Text(
+                        'JJ\'s Backpack',
+                        style: TextStyle(
+                            color: Color(0xFF515c6F),
+                            fontSize: 12,
+                            letterSpacing: 2),
+                      ),
+                      Text(
+                        '\$19.99',
+                        style: TextStyle(
+                            color: Color(0xFF515c6F),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                            letterSpacing: 2),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
@@ -265,107 +281,122 @@ class HomePageScreen extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset(
-                      'assets/homepage/backpack_PNG6363.png',
-                      width: 73,
-                      height: 73,
-                    ),
-                    SizedBox(
-                      height: 70.0,
-                    ),
-                    Text(
-                      'Grey Jacket',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                    Text(
-                      '\$49.99',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                width: 101,
-                height: 135,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset(
-                      'assets/homepage/jacket_PNG8056.png',
-                      width: 73,
-                      height: 73,
-                    ),
-                    SizedBox(
-                      height: 70.0,
-                    ),
-                    Text(
-                      'Faux Sued Jacket',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                    Text(
-                      '\$38.99',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                width: 101,
-                height: 135,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset(
-                      'assets/homepage/backpack.png',
-                      width: 73,
-                      height: 73,
-                    ),
-                    SizedBox(
-                      height: 70.0,
-                    ),
-                    Expanded(
-                      child: Text(
-                        'Blue & White Jacket',
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Center(
+                        child: Image.asset(
+                          'assets/homepage/j01.png',
+                          width: 73,
+                          height: 73,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 2.0,
+                      ),
+                      Text(
+                        'Grey Jacket',
                         style: TextStyle(
                             color: Color(0xFF515c6F),
                             fontSize: 12,
                             letterSpacing: 2),
                       ),
-                    ),
-                    Text(
-                      '\$45.00',
-                      style: TextStyle(
-                          color: Color(0xFF515c6F),
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                          letterSpacing: 2),
-                    ),
-                  ],
+                      Text(
+                        '\$49.99',
+                        style: TextStyle(
+                            color: Color(0xFF515c6F),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                            letterSpacing: 2),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                width: 101,
+                height: 135,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Center(
+                        child: Image.asset(
+                          'assets/homepage/j02.png',
+                          width: 73,
+                          height: 73,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 2.0,
+                      ),
+                      Text(
+                        'Faux Sued Jacket',
+                        style: TextStyle(
+                            color: Color(0xFF515c6F),
+                            fontSize: 12,
+                            letterSpacing: 2),
+                      ),
+                      Text(
+                        '\$38.99',
+                        style: TextStyle(
+                            color: Color(0xFF515c6F),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                            letterSpacing: 2),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                width: 101,
+                height: 135,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Center(
+                        child: Image.asset(
+                          'assets/homepage/j03.png',
+                          width: 73,
+                          height: 73,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 2.0,
+                      ),
+                      Expanded(
+                        child: Text(
+                          'Blue & White Jacket',
+                          style: TextStyle(
+                              color: Color(0xFF515c6F),
+                              fontSize: 12,
+                              letterSpacing: 2),
+                        ),
+                      ),
+                      Text(
+                        '\$45.00',
+                        style: TextStyle(
+                            color: Color(0xFF515c6F),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12,
+                            letterSpacing: 2),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
@@ -408,10 +439,9 @@ class ProfileHomeScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(20.0)),
-                        child: Image.asset(
-                          'assets/homepage/base02.png',
-                          fit: BoxFit.cover,
-                        ),
+                        child: ClipRRect(
+                           borderRadius: BorderRadius.circular(20),
+                          child: Image.network('https://cdn.pixabay.com/photo/2019/06/11/10/56/girl-4266712_960_720.jpg',fit: BoxFit.cover,))
                       ),
                       Positioned(
                         top: 15,
@@ -470,9 +500,12 @@ class ProfileHomeScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(20.0)),
-                        child: Image.asset(
-                          'assets/homepage/base02.png',
-                          fit: BoxFit.cover,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child: Image.network(
+                            'https://cdn.pixabay.com/photo/2015/07/07/23/40/fashion-835219_960_720.jpg',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                       Positioned(
@@ -543,10 +576,13 @@ class ProfileHomeScreen extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          Image.asset(
-                            'assets/homepage/base02.png',
-                            width: 35,
-                            height: 76,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset(
+                              'assets/homepage/s01.png',
+                              width: 35,
+                              height: 76,
+                            ),
                           ),
                           Text('Floral Dress'),
                           Text('\$49.99')
@@ -562,10 +598,13 @@ class ProfileHomeScreen extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          Image.asset(
-                            'assets/homepage/base02.png',
-                            width: 35,
-                            height: 76,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset(
+                              'assets/homepage/s02.png',
+                              width: 35,
+                              height: 76,
+                            ),
                           ),
                           Text('Floral Dress'),
                           Text('\$49.99')
@@ -581,10 +620,13 @@ class ProfileHomeScreen extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          Image.asset(
-                            'assets/homepage/base02.png',
-                            width: 35,
-                            height: 76,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset(
+                              'assets/homepage/s03.png',
+                              width: 35,
+                              height: 76,
+                            ),
                           ),
                           Text('Floral Dress'),
                           Text('\$49.99')
@@ -600,10 +642,13 @@ class ProfileHomeScreen extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          Image.asset(
-                            'assets/homepage/base02.png',
-                            width: 35,
-                            height: 76,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset(
+                              'assets/homepage/s04.png',
+                              width: 35,
+                              height: 76,
+                            ),
                           ),
                           Text('Floral Dress'),
                           Text('\$49.99')
@@ -619,10 +664,13 @@ class ProfileHomeScreen extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          Image.asset(
-                            'assets/homepage/base02.png',
-                            width: 35,
-                            height: 76,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset(
+                              'assets/homepage/s05.png',
+                              width: 35,
+                              height: 76,
+                            ),
                           ),
                           Text('Floral Dress'),
                           Text('\$49.99')
@@ -638,10 +686,13 @@ class ProfileHomeScreen extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          Image.asset(
-                            'assets/homepage/base02.png',
-                            width: 35,
-                            height: 76,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset(
+                              'assets/homepage/s06.png',
+                              width: 35,
+                              height: 76,
+                            ),
                           ),
                           Text('Floral Dress'),
                           Text('\$49.99')
@@ -700,33 +751,41 @@ class ReviewScreen extends StatelessWidget {
                         Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
                       ],
                     ),
-                    Text('Janr Doe'),
-                    Text('Lorem ipsum dolor sit amet,'),
-                    Text('consectetur adipiscing elit, sed'),
+                    Text('Janr Doe',style: TextStyle(fontSize: 15,color: Color(0xff515c6f)),),
+                    Text('Lorem ipsum dolor sit amet,',style: TextStyle(fontSize: 15,color: Color(0xff515c6f))),
+                    Text('consectetur adipiscing elit, sed',style: TextStyle(fontSize: 15,color: Color(0xff515c6f))),
                     Row(
                       children: [
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l11.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l12.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l13.png',
                           width: 44,
                           height: 44,
                         ),
+
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l14.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l15.png',
                           width: 44,
                           height: 44,
                         ),
@@ -737,7 +796,7 @@ class ReviewScreen extends StatelessWidget {
               )
             ],
           ),
-          Row(
+         Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
@@ -772,33 +831,41 @@ class ReviewScreen extends StatelessWidget {
                         Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
                       ],
                     ),
-                    Text('Janr Doe'),
-                    Text('Lorem ipsum dolor sit amet,'),
-                    Text('consectetur adipiscing elit, sed'),
+                    Text('Janr Doe',style: TextStyle(fontSize: 15,color: Color(0xff515c6f)),),
+                    Text('Lorem ipsum dolor sit amet,',style: TextStyle(fontSize: 15,color: Color(0xff515c6f))),
+                    Text('consectetur adipiscing elit, sed',style: TextStyle(fontSize: 15,color: Color(0xff515c6f))),
                     Row(
                       children: [
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l11.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l12.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l13.png',
                           width: 44,
                           height: 44,
                         ),
+
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l14.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l15.png',
                           width: 44,
                           height: 44,
                         ),
@@ -809,7 +876,7 @@ class ReviewScreen extends StatelessWidget {
               )
             ],
           ),
-          Row(
+         Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
@@ -844,33 +911,41 @@ class ReviewScreen extends StatelessWidget {
                         Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
                       ],
                     ),
-                    Text('Janr Doe'),
-                    Text('Lorem ipsum dolor sit amet,'),
-                    Text('consectetur adipiscing elit, sed'),
+                    Text('Janr Doe',style: TextStyle(fontSize: 15,color: Color(0xff515c6f)),),
+                    Text('Lorem ipsum dolor sit amet,',style: TextStyle(fontSize: 15,color: Color(0xff515c6f))),
+                    Text('consectetur adipiscing elit, sed',style: TextStyle(fontSize: 15,color: Color(0xff515c6f))),
                     Row(
                       children: [
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l11.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l12.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l13.png',
                           width: 44,
                           height: 44,
                         ),
+
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l14.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l15.png',
                           width: 44,
                           height: 44,
                         ),
@@ -881,7 +956,7 @@ class ReviewScreen extends StatelessWidget {
               )
             ],
           ),
-          Row(
+         Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
@@ -916,33 +991,41 @@ class ReviewScreen extends StatelessWidget {
                         Opacity(opacity: 0.5, child: Text('10 Oct, 2018'))
                       ],
                     ),
-                    Text('Janr Doe'),
-                    Text('Lorem ipsum dolor sit amet,'),
-                    Text('consectetur adipiscing elit, sed'),
+                    Text('Janr Doe',style: TextStyle(fontSize: 15,color: Color(0xff515c6f)),),
+                    Text('Lorem ipsum dolor sit amet,',style: TextStyle(fontSize: 15,color: Color(0xff515c6f))),
+                    Text('consectetur adipiscing elit, sed',style: TextStyle(fontSize: 15,color: Color(0xff515c6f))),
                     Row(
                       children: [
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l11.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l12.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l13.png',
                           width: 44,
                           height: 44,
                         ),
+
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l14.png',
                           width: 44,
                           height: 44,
                         ),
+                        SizedBox(width: 8.0,),
+
                         Image.asset(
-                          'assets/homepage/base02.png',
+                          'assets/homepage/l15.png',
                           width: 44,
                           height: 44,
                         ),
@@ -953,7 +1036,7 @@ class ReviewScreen extends StatelessWidget {
               )
             ],
           ),
-        ],
+         ],
       ),
     );
   }
@@ -969,18 +1052,22 @@ class StarBar extends StatelessWidget {
       children: [
         Icon(
           Icons.star,
-          color: Colors.red,
+          color: Colors.red,size:12
         ),
         Icon(
           Icons.star,
-          color: Colors.red,
+          color: Colors.red,size: 12,
         ),
         Icon(
           Icons.star,
-          color: Colors.red,
+          color: Colors.red,size: 12,
         ),
-        Icon(Icons.star),
-        Icon(Icons.star),
+        Opacity(
+          opacity: 0.4,
+          child: Icon(Icons.star,size: 12,)),
+        Opacity(
+          opacity: 0.4,
+          child: Icon(Icons.star,size: 12,)),
       ],
     );
   }

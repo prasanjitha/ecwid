@@ -176,8 +176,8 @@ class HomeDecorationScreen extends StatelessWidget {
                   children: [
                     ClipRRect(
                         borderRadius: BorderRadius.circular(10.0),
-                        child: Image.asset(
-                          'assets/homepage/Base.png',
+                        child: Image.network(
+                          'https://cdn.pixabay.com/photo/2018/01/05/08/19/beautiful-3062365_960_720.jpg',
                           width: 365.0,
                           height: 184.0,
                           fit: BoxFit.cover,
@@ -250,13 +250,14 @@ class HomeDecorationScreen extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(width:10.0),
            
               Stack(
                 children: [
                   ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
-                      child: Image.asset(
-                        'assets/homepage/base02.png',
+                      child: Image.network(
+                        'https://cdn.pixabay.com/photo/2021/07/26/14/30/woman-6494461_960_720.jpg',
                         width: 365.0,
                         height: 184.0,
                         fit: BoxFit.cover,

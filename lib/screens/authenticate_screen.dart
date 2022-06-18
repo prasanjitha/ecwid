@@ -22,6 +22,7 @@ class _AuthenticateScreenState extends State<AuthenticateScreen> {
           backgroundColor: Color(0xFFF5F6F8),
           elevation: 0,
           bottom: TabBar(
+            indicatorColor:Color(0xFFF5F6F8) ,
             tabs: [
               Tab(
                   child: Text(
@@ -129,10 +130,20 @@ class LogIn extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.bold),
                     ),
-                    Icon(
-                      Icons.next_plan_rounded,
-                      color: Colors.white,
-                      size: 29,
+                    Container(
+                      width: 30,
+                      height: 30,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40)
+                        ,color: Colors.white
+                      ),
+                      child: Center(
+                        child: Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          color: Colors.black,
+                          size: 18,
+                        ),
+                      ),
                     )
                   ],
                 ),
@@ -231,11 +242,21 @@ class SignUp extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
-                  Icon(
-                    Icons.next_plan_rounded,
-                    color: Colors.white,
-                    size: 29,
-                  )
+ Container(
+                      width: 30,
+                      height: 30,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40)
+                        ,color: Colors.white
+                      ),
+                      child: Center(
+                        child: Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          color: Colors.black,
+                          size: 18,
+                        ),
+                      ),
+                    )
                 ],
               ),
             ),
@@ -333,11 +354,21 @@ class ForgotPassword extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
-                  Icon(
-                    Icons.next_plan_rounded,
-                    color: Colors.white,
-                    size: 29,
-                  )
+   Container(
+                      width: 30,
+                      height: 30,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40)
+                        ,color: Colors.white
+                      ),
+                      child: Center(
+                        child: Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          color: Colors.black,
+                          size: 18,
+                        ),
+                      ),
+                    )
                 ],
               ),
             ),

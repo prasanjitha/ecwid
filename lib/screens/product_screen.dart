@@ -4,6 +4,8 @@ import 'package:ecwid/screens/home_category_screen.dart';
 import 'package:ecwid/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'notification_screen.dart';
+
 class ProductScreen extends StatelessWidget {
   const ProductScreen({Key? key}) : super(key: key);
 
@@ -67,14 +69,41 @@ class ProductScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Icon(Icons.shopping_bag)
+                             Container(
+                            
+                               width: 30.0,
+                               child: Stack(
+                                 children: <Widget>[
+                                  Image.asset('assets/homepage/notifications.png',width: 40,height: 40,),
+                                   Positioned(
+                                       child: Stack(
+                                     children: <Widget>[
+                                       Icon(Icons.brightness_1,
+                                           size: 20.0, color: Color(0xFFFF6969)),
+                                       Positioned(
+                                           top: 4.0,
+                                           right: 5.0,
+                                           child: Center(
+                                             child: Text(
+                                               '4',
+                                               style: TextStyle(
+                                                   color: Colors.white,
+                                                   fontSize: 11.0,
+                                                   fontWeight: FontWeight.w500),
+                                             ),
+                                           )),
+                                     ],
+                                   )),
+                                 ],
+                               ),
+                             ),
                 ],
               ),
               Image.asset(
-                'assets/homepage/base02.png',
+                'assets/homepage/boots.png',
                 width: 219.75,
                 height: 202,
-                fit: BoxFit.cover,
+                fit: BoxFit.fitHeight,
               ),
               SizedBox(height: 20.0),
               DefaultTabController(
@@ -206,17 +235,28 @@ class ProductTab extends StatelessWidget {
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
+                boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Colors.pink,
+                blurRadius: 5.0,
+                offset: Offset(0.0, 0.75)
+            )
+          ],
                   borderRadius: BorderRadius.circular(20), color: Colors.pink),
               child: Center(
-                  child: Icon(
-                Icons.rice_bowl_outlined,
-                color: Colors.white,
-              )),
+                  child: Image.asset('assets/homepage/selected.png')),
             ),
             Container(
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
+                                boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Color(0xFFFF8c69),
+                blurRadius: 5.0,
+                offset: Offset(0.0, 0.75)
+            )
+          ],
                   borderRadius: BorderRadius.circular(20),
                   color: Color(0xFFFF8c69)),
             ),
@@ -224,6 +264,13 @@ class ProductTab extends StatelessWidget {
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
+                                boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Color(0xFF67b5f7),
+                blurRadius: 5.0,
+                offset: Offset(0.0, 0.75)
+            )
+          ],
                   borderRadius: BorderRadius.circular(20),
                   color: Color(0xFF67b5f7)),
             ),
@@ -231,6 +278,13 @@ class ProductTab extends StatelessWidget {
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
+                                boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Color(0xFFc9c9c9),
+                blurRadius: 5.0,
+                offset: Offset(0.0, 0.75)
+            )
+          ],
                   borderRadius: BorderRadius.circular(20),
                   color: Color(0xFFFfffff)),
             ),
@@ -238,6 +292,13 @@ class ProductTab extends StatelessWidget {
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
+                                            boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Color(0xFFc9c9c9),
+                blurRadius: 5.0,
+                offset: Offset(0.0, 0.75)
+            )
+          ],
                   borderRadius: BorderRadius.circular(20),
                   color: Color(0xFFc9c9c9)),
             ),
@@ -245,6 +306,13 @@ class ProductTab extends StatelessWidget {
               width: 38.82,
               height: 38.82,
               decoration: BoxDecoration(
+                                boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Color(0xFF3E3A3A),
+                blurRadius: 5.0,
+                offset: Offset(0.0, 0.75)
+            )
+          ],
                   borderRadius: BorderRadius.circular(20),
                   color: Color(0xFF3E3A3A)),
             )

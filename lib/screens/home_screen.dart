@@ -59,12 +59,7 @@ const _items = [
                   width: 30.0,
                   child: Stack(
                     children: <Widget>[
-                      new IconButton(
-                          icon: new Icon(
-                            Icons.notifications,
-                            color: Colors.black,
-                          ),
-                          onPressed: () {}),
+                     Image.asset('assets/homepage/notifications.png',width: 40,height: 40,),
                       new Positioned(
                           child: new Stack(
                         children: <Widget>[
@@ -98,12 +93,7 @@ const _items = [
                   onTap: () {},
                   child: Stack(
                     children: <Widget>[
-                      new IconButton(
-                          icon: new Icon(
-                            Icons.message_sharp,
-                            color: Colors.black,
-                          ),
-                          onPressed: () {}),
+                Image.asset('assets/homepage/Messages.png',width: 40,height: 40,),
                       new Positioned(
                           child: new Stack(
                         children: <Widget>[

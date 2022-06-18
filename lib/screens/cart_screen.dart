@@ -437,11 +437,21 @@ class _CartScreenState extends State<CartScreen> {
                               Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyCheckoutScreen()));
     
                         },
+                        child:  Container(
+                      width: 30,
+                      height: 30,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40)
+                        ,color: Colors.white
+                      ),
+                      child: Center(
                         child: Icon(
-                          Icons.next_plan_rounded,
-                          color: Colors.white,
-                          size: 29,
+                          Icons.arrow_forward_ios_rounded,
+                          color: Colors.black,
+                          size: 18,
                         ),
+                      ),
+                    )
                       )
                     ],
                                ),
